@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.write('Hello world!')
-pip install flask
+
 
 from flask import Flask, render_template
 
