@@ -1,53 +1,18 @@
+pip install streamlit
 import streamlit as st
 
-st.write('Hello world!')
+def main():
+    st.title("Public Health Website")
 
+    st.header("Welcome to our Public Health Portal")
+    st.write("This website provides information about public health, diseases, and prevention measures.")
 
-from flask import Flask, render_template
+    st.header("Contact Us")
+    st.write("Email: info@publichealth.com")
+    st.write("Phone: 123-456-7890")
 
-app = Flask(__name__)
+if __name__ == "__main__":
+    main()
+streamlit run app_streamlit.py
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Health Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #4CAF50;
-            color: white;
-        }
-        section {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Public Health Website</h1>
-    </header>
-    <section>
-        <h2>Welcome to our Public Health Portal</h2>
-        <p>This website provides information about public health, diseases, and prevention measures.</p>
-    </section>
-    <section>
-        <h2>Contact Us</h2>
-        <p>Email: info@publichealth.com</p>
-        <p>Phone: 123-456-7890</p>
-    </section>
-</body>
-</html>
-python app.py
 
