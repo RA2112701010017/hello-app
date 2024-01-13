@@ -12,6 +12,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-streamlit run app_streamlit.py
+
 
 
